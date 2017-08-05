@@ -1,0 +1,47 @@
+
+@font-face {font-family: "anticon_plan";
+  src: url('iconfont.eot?t=1501835395868'); /* IE9*/
+  src: url('iconfont.eot?t=1501835395868#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1501835395868') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1501835395868') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1501835395868#anticon_plan') format('svg'); /* iOS 4.1- */
+}
+
+.anticon_plan {
+  font-family:"anticon_plan" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon-anticon_jiaji-copy:before { content: "\e601"; }
+
+.anticon-anticon_gerenzhongxin:before { content: "\e600"; }
+
+.anticon-anticon_zuduiqingqiu:before { content: "\e619"; }
+
+.anticon-anticon_dingwei:before { content: "\e62e"; }
+
+/*字体*/
+.anticon-anticon_dingwei{
+  font-size: .5rem;
+  position: absolute;
+  margin-top: 1.8rem;
+  margin-left: .6rem;
+}
+.time_stime{
+  font-size: .6rem;
+  color:#ffffff;
+
+}
+.time_zudui{
+  font-size:.6rem;
+  color:#ffffff;
+}
+.time_geren{
+  font-size:.6rem;
+  color:#ffffff;
+}
+
+/*字体结束*/

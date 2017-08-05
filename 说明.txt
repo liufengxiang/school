@@ -1,0 +1,106 @@
+﻿
+脚手架地址
+https://github.com/jpsierens/webpack-react-redux-react-router
+
+字体大小问题处理
+https://github.com/ant-design/antd-init/blob/master/boilerplates/MobileDemo/index.html
+
+
+部署一定要在根目录 ，不然是空白，因为路由不匹配， 路由定义的是 '/'
+如果将server.js中换成IP的话，会导致自动刷新失败，因为不能跨域（localhost != ip）
+
+将inputItem放在list(或者rc-form ??)里面，才有样式
+
+
+将rootes.js中的'/'换成子目录 ，支持子目录部署？？
+
+
+用router的钩子来作认证
+http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu
+http://www.cnblogs.com/BestMePeng/p/React_Router.html
+二、3 . 3 函数内跳转(摘要: this.context.router.push('/'))
+this.context.router.push('/') ，注：这个写法会把跳转载入浏览器历史，若不想留下历史记录则可以 this.context.router.replace('/') 
+
+
+1，将登录/注册放在最外层
+2，中间层是NavBar
+3，其它就是弹出层
+
+formdata
+
+
+reducer:
+timePlan中对于添加标签时删除原Empty标签，和直接删除Tag标签时需要判断前一个和后一个的逻辑不用整合，如现在一个是在reducer一个是在Component
+
+
+
+
+
+########################### client ########################
+时间规划：
+0, 规划按天显示，添加与编辑   5
+1，picker显示
+2，menu选择
+3，提交入库            2
+4，initState           2
+5，本地缓存            3
+6，修改                3
+7，扫描                3
+8，提交                3  
+9，从库中读取          2
+10
+11，提醒               3
+积分列表               1 
+
+上课签到               3
+
+兑换
+1，后台管理            3
+2，前台列表            2
+3，前台详情            2
+4，会员中心订单管理    2
+5，超管订单管理        2
+
+资讯
+1,前台列表              3
+2，前台详情             3   
+
+社交                    2 
+
+分享                    3
+
+教师端                  10
+
+
+一共 66 天
+
+############################# server ############################
+教务端
+生成报表
+
+
+
+
+
+
+
+
+
+server
+整合已经提交的标签
+课表时间选择问题
+
+client
+一周内时间规划
+提交入库
+
+
+
+阿里云
+阿里大于
+微信开放平台  1929594523@qq.com
+swoole
+apicloud｛
+	需配置：支付，微信分享(wx)，极光推送(ajpush)
+	不配置：baidulocation, FNScanner, clipBoard, mam
+｝

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="school" default="dist" basedir=".">
+	<property name="productFileDir" value="C:\APICloud\workspace\school"/>
+
+	<fileset dir="./dist" id="distFiles">
+		<include name="**"/>
+	</fileset>
+	<target name="deployDist">
+		<copy todir="${productFileDir}">
+			<fileset refid="distFiles" />
+		</copy>
+	</target>
+
+    <target name="dist" depends="deployDist">
+        <echo msg="success !" />
+    </target>
+</project>

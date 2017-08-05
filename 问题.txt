@@ -1,0 +1,54 @@
+html5存储用户状态
+
+
+1，由课表和规划表（规划表中只存储标签，因为课程要以课程表为准，课程表中数据可以变化）生成时间规划表后，返回给client
+2，client只提交server需要的标签即可，课程以课程表中数据为准
+3，对于签到后要改变积分这样的需求，可以dispatch一个action来触发相应的reducer，不需要在当前组件的reducer中加上这样的积分state
+4，action和reducer不需要一一对应，只需要有对应的reducer处理就行，而reducer最终是要combine的，所以只要有对应reducer来处理就行
+
+
+reducer 数组通过  ... 展开, object通过object.assign ??
+
+
+container -> component -> action 相关
+reducer -> state 相关， 所有的reducer只要能够处理所有的或部分action(因为有的action只有网络请求)就可以，state是可以直接给到container的
+reducer可以随意命名，最后是在combine的时候可以指定key(通过和reducer的state参数相关)
+不应该出现两个component的container都需要同一action，而这个action必须属于不同文件的情况，出现应该是设计不合理  
+
+http://www.cnblogs.com/lewis617/p/5145073.html?utm_source=tuicool&utm_medium=referral    重要教程
+http://www.cnblogs.com/bingooo/p/5500108.html   重要教程2
+http://www.cnblogs.com/luozhihao/p/5660496.html  重要教程3
+http://www.jianshu.com/p/72f8c1da0b65    生命周期重要
+https://github.com/minooo/React-Study/tree/master/step-03  ant mobile详细说明
+
+
+fetch is not define
+https://github.com/github/fetch
+
+字号问题：(非官方高清方案)
+https://github.com/ant-design/antd-init/blob/master/boilerplates/MobileDemo/index.html
+gulp 解决
+
+
+
+
+阿里线上图标无法加载:如何下载到线下
+
+
+所有操作必须先完善 资料
+
+需求问题：
+一，8，修改规划表：可提前1小时（此处1小时可设置为其它时长）修改规划表中的标签项  ：  比如现在是1:00，已经添加了 1:30-》3:00 的一个标签项踢足球，用户想改成2:00->3:00去游泳。   合理的作法是当天的都不能修改或者全都能修改，建议是当天的不能修改
+当天的也不能添加
+
+二，提示未提交，只有提交了time_plan_tag_record才有记录，才能参与计算
+
+三，点开后查看人数，如何更新
+
+
+
+用browserHistory的时候，一定要部署到server的'/'下面，因为router中配置的是'/'，而换成hashHistory时，可以直接双击打开文件，因为index.html/#/已经是'/'
+
+图片资源如果没有经过require，打包的时候是不会打包到最终目录下的images中的，只有require的资源才会被打包出来
+
+将外部css放在js的后面，因为js中也打包进了css，放在前面会被忽略
